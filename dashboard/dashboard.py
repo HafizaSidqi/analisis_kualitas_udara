@@ -83,7 +83,7 @@ def show_graph(polutan):
         create_best_worst_bar_chart(month_df, polutan)
 
 # load data
-all_df = pd.read_pickle("all_df.pkl")
+all_df = pd.read_pickle("dashboard/all_df.pkl")
 
 # Berikutnya adalah menambahkan filter pada dashboard dengan menggunakan widget date input pada bagian sidebar
 min_date = all_df["datetime"].min()
